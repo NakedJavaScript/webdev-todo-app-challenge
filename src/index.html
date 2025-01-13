@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Dev ToDo Book List</title>
+    <link rel="stylesheet" href="style.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Books I Need to Read</h1>
+    </div>
+    <div class="filters">
+      <button id="filter-all">All</button>
+      <button id="filter-open">Open</button>
+      <button id="filter-done">Done</button>
+    </div>
+
+    <div class="container">
+      <ul id="list-item-container"></ul>
+      <button id="add-todo-btn">
+        <span class="material-symbols-outlined">add </span>Add Item
+      </button>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="item-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>Add New Item</h2>
+        <input type="text" id="item-input" placeholder="Enter your item" />
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
